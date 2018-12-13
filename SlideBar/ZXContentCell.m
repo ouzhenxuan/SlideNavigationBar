@@ -22,13 +22,15 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.label = [[UILabel alloc]init];
+        self.label.frame = CGRectMake(0, 0, 100, 50);
+        self.label.textAlignment = NSTextAlignmentCenter;
+        self.label.center = self.center;
         [self.contentView addSubview:_label];
-        
     }
     return self;
 }
 - (void)applyLayoutAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes {
-    self.label.frame = self.contentView.frame;
+    
 }
 
 @end

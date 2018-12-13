@@ -23,7 +23,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    ZXFollowSlide * slideView =  [[ZXFollowSlide alloc] initWithFrame:CGRectMake(0, 0, WIDTH , HEIGHT)];
+    ZXFollowSlide * slideView =  [[ZXFollowSlide alloc] initWithFrame:CGRectMake(0, 20, WIDTH , HEIGHT)];
     slideView.backgroundColor = [UIColor redColor];
     [self.view addSubview:slideView];
     
